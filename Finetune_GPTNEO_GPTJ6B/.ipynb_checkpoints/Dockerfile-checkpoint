@@ -35,8 +35,8 @@ RUN pip install wandb
 
 ENV WANDB_DISABLED=true
 
-ENV TRANSFORMERS_CACHE=/opt/ml/model
-ENV HF_DATASETS_CACHE=/opt/ml/model
+ENV TRANSFORMERS_CACHE=/opt/ml/input/cache/
+ENV HF_DATASETS_CACHE=/opt/ml/input/cache/
 
 COPY . /workspace
 
